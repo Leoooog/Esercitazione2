@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=0.7in]{geometry}
+\usepackage{lipsum}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage[table]{xcolor}
+\usepackage{minted}
+\usemintedstyle{vs}
+\usepackage{hhline}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\contentsname}{Indice}
+\begin{document}
+\title{%
+  Esercitazione 2 \\
+  \large Realizzazione di una rete WLAN}
+\date{}
+\author{Leonardo Geusa 4N}
+\setcounter{section}{-1}
+\maketitle
+
+\input{esercizio}
+
+\vspace{30pt}
+
+\tableofcontents
+
+\raggedright
+
+\input{ipotesi_aggiuntive}
+
+\input{analisi_struttura}
+
+\input{classificazione_reti}
+
+\input{analisi_topologia}
+
+\input{analisi_apparati}
+
+\newpage
+
+\input{piano_indirizzamento}
+
+\input{progettazione_rete}
+
+\input{configurazione_ap}
+
+\newpage
+
+\input{test_connettività}
+
+\vspace{100pt}
+Il codice sorgente di questo pdf si trova \href{https://github.com/Leoooog/Esercitazione2}{\textcolor{blue}{qui}}
+
+\end{document}

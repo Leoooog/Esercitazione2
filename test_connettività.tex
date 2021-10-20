@@ -1,0 +1,10 @@
+\section{Test di connettività}
+\hspace{24pt}Infine si effettuano dei test di connettività tra i dispositivi. Un caso d'uso particolare potrebbe essere quello di un dipendente con postazione in Ufficio 2 (ad esempio \textit{PC5}) che ha bisogno di accedere al \textit{Server0}. Per testare la connettività tra questi due host si invia un comando \mintinline{batch}{ping} da \textit{PC5} a \textit{Server0}. Il comando sarà:
+\begin{minted}{batch}
+	ping 192.14.10.4
+\end{minted}
+\begin{figure}[!h]
+	\includegraphics[scale=0.85]{test_connettività}
+	\label{fig:tc1}
+\end{figure}
+\hspace{24pt}Si può osservare che tutti i pacchetti di \mintinline{batch}{ping} che sono stati inviati da \textit{PC5} hanno ricevuto risposta da \textit{Server0}. Ogni pacchetto per andare da \textit{PC5} a \textit{Server0} passa per l'AP, il quale lo inoltra a \textit{Switch0}, che a sua volta lo inoltra a \textit{Switch2}, che lo consegna a \textit{Server0}. Il pacchetto di ritorno percorre la stessa strada al contrario fino ad arrivare all'AP, il quale spedisce il pacchetto a \textit{PC5}. Si può notare che, visto che l'AP spedisce il pacchetto via etere, il pacchetto lo ricevono tutti i dispositivi collegati a quell'AP, ma soltanto il destinatario (\textit{PC5}) lo legge.
